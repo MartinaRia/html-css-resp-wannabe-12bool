@@ -2,7 +2,7 @@
 
 /* REGOLE GENERALI */
 
-.fullwdth{
+.fullwidth{
   max-width: 100%;
 }
 
@@ -21,7 +21,7 @@
 }
 
 /* DESKTOP -------------------------------- */
-@media screen and (min-width: 993px) {
+@media screen and (min-device-width: 993px) {
 
 
   /* Contenitore (righe)----------------- */
@@ -109,7 +109,7 @@
 }
 
 /* TABLET --------------------------------- */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) {
 
 
   /* Contenitore (righe)----------------- */
@@ -197,7 +197,7 @@
 }
 
 /* MOBILE --------------------------------- */
-@media screen and (max-width: 767px) {
+@media screen and (max-device-width: 767px) {
 
 
   /* Contenitore (righe)----------------- */

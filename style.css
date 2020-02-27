@@ -1,21 +1,9 @@
 
-/* ------------Debu ----------------*/
-/* [class*="col-"]{
-
-  border: 1px solid red;
-} */
-
-
-
 /* REGOLE GENERALI */
 
 body{
   font-family: 'Martel';
 }
-
-/* p{
-  font-family: Helvetica;
-} */
 
 *{
   margin: 0;
@@ -46,7 +34,7 @@ body{
 }
 
 #terzo{
-  box-shadow: inset 0px -8px 8px -10px rgba(51,71,91,0.85);
+  box-shadow: inset 0px -10px 8px -10px rgba(51,71,91,0.85);
 }
 
 #quarto{
@@ -60,10 +48,8 @@ body{
 
 
 
-
-
 /* DESKTOP -------------------------------- */
-@media screen and (min-width: 993px) {
+@media screen and (min-device-width: 993px) {
 
   h1{
     font-size: 40px;
@@ -131,7 +117,6 @@ body{
     border-radius: 3px;
   }
 
-
   #lezioni .left img{
     width: 90px;
   }
@@ -195,7 +180,7 @@ body{
 }
 
 /* TABLET --------------------------------- */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) {
 
   h1{
     font-size: 38px;
@@ -264,146 +249,6 @@ body{
     border-radius: 3px;
   }
 
-
-  #lezioni .left img{
-    width: 90px;
-  }
-
-  #lezioni .right img{
-    height: 90px;
-  }
-
-  #lezioni h3{
-    margin: 2% 0;
-  }
-
-  /* ------------------------------------- */
-
-  #steps .column{
-    height: 350px;
-    padding: 20px;
-  }
-
-  .immagini{
-    width: 100%;
-    height: 40%;
-    position: relative;
-    margin: 20px 0px;
-  }
-
-  #steps .column img{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #steps .column *{
-    text-align: center;
-  }
-
-  #terzo{
-    padding-bottom: 5%;
-  }
-
-  /* ------------------------------------------------- */
-
-  #why .icon{
-    text-align: center;
-  }
-
-  #why .icon img{
-    width: 60px;
-    padding: 10px;
-    background-color: #428bca;
-    border-radius: 50%;
-    margin: 30px 0px 10px 0px;
-  }
-
-  #why p{
-    font-size: 15px;
-    text-align: justify;
-    padding: 0px 20px;
-  }
-
-  #why h4{
-    margin-bottom: 2%;
-    text-align: center;
-  }
-
-}
-
-/* MOBILE --------------------------------- */
-@media screen and (max-width: 767px) {
-
-  h1{
-    font-size: 30px;
-  }
-  h2{
-    text-align:center;
-    font-weight: 900;
-    font-size: 28px;
-  }
-
-  h3, h4{
-    font-weight: 900;
-  }
-
-  /*  ---------------------- */
-
-  #primo{
-    background: URL(img/teacher1.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 30vh;
-    border-bottom: solid 4px #2388c2;
-  }
-  .over{
-    width: 100%;
-    height: 30vh;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    background: #171620b8;
-    color: white;
-  }
-
-  h1{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-  }
-
-  /* -------------------------------------- */
-
-  #lezioni{
-    position: relative;
-    min-height: 300px;
-  }
-
-  .left{
-    position: absolute;
-    top:-50%;
-    left:calc((100%/12)*1);
-  }
-  .right{
-    position: absolute;
-    top:-50%;
-    left: calc((100%/12)*6);
-    transform: translate(0%, 0%);
-  }
-
-  #lezioni .left, #lezioni .right{
-    padding: 40px;
-    min-height: 400px;
-    border-radius: 3px;
-  }
-
-
   #lezioni .left img{
     width: 90px;
   }
@@ -468,6 +313,159 @@ body{
   #why h3{
     margin-bottom: 2%;
     text-align: center;
+  }
+
+}
+
+/* MOBILE --------------------------------- */
+@media screen and (max-device-width: 767px) {
+
+  h1{
+    font-size: 100px;
+    line-height: 1.1em;
+  }
+  h2{
+    text-align:center;
+    font-weight: 900;
+    font-size: 90px;
+  }
+
+  h3, h4{
+    font-weight: 900;
+  }
+
+  /*  ---------------------- */
+
+  #primo{
+    background: URL(img/teacher1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50vh;
+    border-bottom: solid 4px #2388c2;
+  }
+  .over{
+    width: 100%;
+    height: 49.8vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background: #171620b8;
+    color: white;
+  }
+
+  h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 50px;
+  }
+
+  p{
+    font-size: 35px;
+  }
+
+  /* -------------------------------------- */
+
+  #lezioni{
+    position: relative;
+    min-height: 1200px;
+  }
+
+  .left{
+    position: absolute;
+    top:-115px;
+    left:calc((100%/12)*1);
+  }
+  .right{
+    position: absolute;
+    top:calc(-115px + 620px);
+    left: calc((100%/12)*1);
+    transform: translate(0%, 0%);
+  }
+
+  #lezioni .left, #lezioni .right{
+    padding: 40px;
+    min-height: 600px;
+    border-radius: 3px;
+  }
+
+  #lezioni .left img{
+    width: 180px;
+  }
+
+  #lezioni .right img{
+    height: 180px;
+  }
+
+  #lezioni h3{
+    margin: 2% 0;
+  }
+
+  /* ------------------------------------- */
+
+  #steps .column{
+    min-height: 350px;
+    padding: 50px 70px;
+  }
+
+  .immagini{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: 20px 0px;
+  }
+
+  #steps .column img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #steps .column *{
+    text-align: center;
+  }
+
+  #terzo{
+    padding-bottom: 5%;
+  }
+
+  /* ------------------------------------------------- */
+
+  #why h2{
+    padding: 30px 0px;
+  }
+  #why .column{
+    padding:60px 0px;
+  }
+
+  #why .icon{
+    text-align: center;
+  }
+
+  #why .icon img{
+    width: 80px;
+    padding: 10px;
+    background-color: #428bca;
+    border-radius: 50%;
+    /* margin: 30px 0px 10px 0px; */
+  }
+
+  #why p{
+    font-size: 50px;
+    text-align: justify;
+  }
+
+  #why h3{
+    margin-bottom: 2%;
+    text-align: justify;
   }
 
 }
