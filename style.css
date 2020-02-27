@@ -33,23 +33,57 @@ h3, h4{
   font-weight: 900;
 }
 
+#primo{
+  background: URL(img/teacher1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+
 
 /* DESKTOP -------------------------------- */
 @media screen and (min-width: 993px) {
+
+  #primo {
+    height: 80vh;
+    border-bottom: solid 4px #2388c2;
+  }
+  .over{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background: #171620b8;
+    color: white;
+  }
+
+  #lezioni {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
 
   #lezioni *{
     text-align:center;
   }
 
+  #lezioni .left, #lezioni .right{
+    padding: 20px;
+  }
+
   #lezioni .left img{
-    width: 150px;
+    width: 90px;
   }
 
   #lezioni .right img{
-    height: 150px;
+    height: 90px;
   }
 
-  #steps *{
+  #steps .column *{
     text-align: center;
   }
 
