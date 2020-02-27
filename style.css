@@ -1,7 +1,7 @@
 
 /* ------------Debu ----------------*/
 [class*="col-"]{
-  height: 12px;
+
   border: 1px solid red;
 }
 
@@ -25,13 +25,44 @@ body{
 
 h2{
   text-align:center;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+h3, h4{
+  font-weight: 900;
 }
 
 
 /* DESKTOP -------------------------------- */
 @media screen and (min-width: 993px) {
 
+  #lezioni *{
+    text-align:center;
+  }
 
+  #lezioni .left img{
+    width: 150px;
+  }
+
+  #lezioni .right img{
+    height: 150px;
+  }
+
+  #steps *{
+    text-align: center;
+  }
+
+  #why .icon{
+    text-align: center;
+  }
+
+  #why .icon img{
+    width: 50px;
+    padding: 10px;
+    background-color: #428bca;
+    border-radius: 50%;
+  }
 
 }
 

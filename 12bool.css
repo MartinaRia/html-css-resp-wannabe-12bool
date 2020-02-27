@@ -2,6 +2,10 @@
 
 /* REGOLE GENERALI */
 
+.fullwdth{
+  max-width: 100%;
+}
+
 .container::after {
   content: "";
   display: table;
